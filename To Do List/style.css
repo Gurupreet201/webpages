@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.table{
+    width: 100%;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('../images/image.jpg');
+    background-size: cover;
+    background-blend-mode: lighten ;
+}
+.color{
+    color: white !important;
+}
+.margin-row{
+    margin-right: 2.5rem !important;
+    margin-left: 2.5rem !important;
+}
+.margin-input{
+    margin-top: 40px !important;
+}
+.margin-list{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px !important;
+}
+.width{
+    max-width: 1140px !important;
+}
+.background-color{
+    background-color: #d1c5b9d1;
+    padding: 20px;
+    border: 2px slategrey solid;
+    border-radius: 20px;
+}
+.button-color{
+    background-color: #4e738b !important;
+    border-color: #4e738b !important;
+}
+
+.text-color{
+    color: #547b54;
+}
+.font-size{
+    font-size: 1.9rem;
+}
+.your-item{
+    text-align: center;
+    margin-top: 0.2rem !important;
+    margin-bottom: 0.7rem !important;
+}
+
+@media screen and (min-width: 1200px){
+    .max-width{
+        max-width: 1140px !important;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .max-width{
+        max-width: 960px !important;
+    }
+    .margin-row{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .max-width{
+        max-width: 720px !important;
+    }
+    .margin-row{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .max-width{
+        max-width: 540px !important;
+    }
+    .margin-row{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+}
+@media screen and (max-width: 500px){
+    .table thead{
+		display: none;
+	}
+
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    .table td{
+		text-align: center;
+		position: relative;
+	}
+	.table td::before{
+		content: attr(data-label);
+		position: absolute;
+		left:0;
+		width: 50%;
+		padding-left:15px;
+		font-size:15px;
+		font-weight: bold;
+		text-align: left;
+    }
+    .margin-row{
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+    .left{
+        text-align: left !important;
+    }
+    .right{
+        text-align: right !important;
+    }
+}
